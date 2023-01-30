@@ -6,7 +6,7 @@
 <!-- By: tkomeno <tkomeno@student.42tokyo.jp>       +#+  +:+       +#+       -->
 <!--                                              +#+#+#+#+#+   +#+          -->
 <!-- Created: 2023/01/30 15:02:50 by tkomeno           #+#    #+#            -->
-<!-- Updated: 2023/01/30 15:08:32 by tkomeno          ###   ########.fr      -->
+<!-- Updated: 2023/01/30 17:27:48 by tkomeno          ###   ########.fr      -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
@@ -17,13 +17,64 @@
 		<title>
 			My Resume
 		</title>
+		<style>
+			h1 {
+				text-align: center;
+			}
+			.center {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.ft {
+				border-color: #424242;
+			}
+			table, th, td {
+				border: 1px solid;
+				border-color: red;
+				border-collapse: collapse;
+				padding: 15px;
+			}
+		</style>
 	</head>
 	<body>
-		<header>
-		</header>
-		<main>
-			<footer>
-			</footer>
-		</main>
+		<h1>My Resume</h1>
+			<table class="center">
+				<tr>
+					<th>Name</th>
+					<td>Thiago Komeno</td>
+				</tr>
+				<tr>
+					<th>Birth</th>
+					<td>2003/11/04 🐑</td>
+				</tr>
+				<tr>
+					<th>Career Path</th>
+					<td>
+						Japanese Language Teacher
+					</td>
+				</tr>
+				<tr>
+					<th>Languages</th>
+					<td>
+						<ul>
+							<li>🇯🇵 Japanese</li>
+							<li>🇨🇳 Mandarin Chinese</li>
+							<li>🇧🇷 Brazilian Portuguese</li>
+							<li>🇺🇸 American English</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th>Skills</th>
+					<td class="ft">
+						<ol>
+							<li>I know how to exit Vim</li>
+							<li>I know how to exit Vim</li>
+							<li>I know how to exit Vim</li>
+							<li style="color: white">I really like Vim</li>
+						</ol>
+					</td>
+				</tr>
+			</table>
 	</body>
 </html>
