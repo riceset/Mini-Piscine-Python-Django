@@ -1,0 +1,61 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- form.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: tkomeno <tkomeno@student.42tokyo.jp>       +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2023/01/30 17:32:12 by tkomeno           #+#    #+#            -->
+<!-- Updated: 2023/02/01 15:26:50 by tkomeno          ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Form</title>
+		<script src="./popup.js"></script>
+	</head>
+	<body>
+		<h1>Form</h1>
+		<form>
+			<ul>
+				<li>
+					<label for="firstname">First Name: </label>
+					<input type="text" id="firstname" placeholder="Rick">
+				</li>
+				<li>
+					<label for="name">Name: </label>
+					<input type="text" id="name" placeholder="Rick Smith">
+				</li>
+				<li>
+					<label for="age">Age: </label>
+					<input type="number" min=0 id="age" placeholder="23">
+				</li>
+				<li>
+					<label for="phone">Phone: </label>
+					<input type="tel" id="phone" placeholder="+81 3-3812-2111">
+				</li>
+				<li>
+					<label for="email">Mail: </label>
+					<input type="mail" id="email" placeholder="tcook@apple.com">
+				</li>
+				<li>
+					<label for="student">Student at école 42?: </label>
+					<input type="checkbox" id="student">
+				</li>
+				<li>
+					Gender:
+					<label for="gender">Male: </label>
+					<input type="radio" name="gender" id="gender_male" value="Male">
+					<label for="gender">Female: </label>
+					<input type="radio" name="gender" id="gender_female" value="female">
+					<label for="gender">Other: </label>
+					<input type="radio" name="gender" id="gender_other" value="other">
+				</li>
+				<button onclick="displayFormContents()">Submit</button>
+			</ul>
+		</form>
+	</body>
+</html>
